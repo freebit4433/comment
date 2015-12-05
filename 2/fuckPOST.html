@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="easyui/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			alert("001");
+			var txData = new Object();
+			txData.action = "delete";
+			$.ajax({
+				type:'POST',
+				url:'/comment/2/php/mainpage.php',
+				async:false, 
+				dataType:'json',
+				data:txData,
+				success:function(data,textStatus){
+					alert("传回的数据："+data);
+					alert("请求成功的状态码："+textStatus);
+				},
+				complete:function(XHR,textStatus){
+					alert("请求完成的状态码："+textStatus);
+				},
+				error:function(XHR,textStatus,errorThrown){
+					alert("请求错误的状态码："+textStatus);
+				}
+			});
+			alert("003");
+		})
+	</script>
+</body>
+</html>

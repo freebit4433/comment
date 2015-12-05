@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Comment</title>
+	<link rel="stylesheet" type="text/css" href="css/comment.css" />
+	<script type="text/javascript" src="js/jQuery-v1.11.3.js"></script>
+	<script type="text/javascript" src="js/json2.js"></script>
+	<script type="text/javascript" src="js/comment.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			用户名：<input type="text" id="userName" name="username" />
+			<br />
+			图像：
+			<br />
+			<img src="img/1.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/3.jpg" alt="">
+			<img src="img/4.jpg" alt="">
+			<img src="img/5.jpg" alt="">
+			<br />
+			<input class="radio" type="radio" checked="checked" name="image" val="1" />
+			<input class="radio" type="radio" name="image" val="2" />
+			<input class="radio" type="radio" name="image" val="3" />
+			<input class="radio" type="radio" name="image" val="4" />
+			<input class="radio" type="radio" name="image" val="5" />
+			<script type="text/javascript">
+				var a = $("input[name='image']:checked").attr('val');
+				//alert(a);
+			</script>
+			<br />
+			个人主页：<input type="text" id="persionalPageAddress" />
+			<br>
+			电话号码：<input type="text" id="telephoneNum" />
+		</div>
+		<div id="comment">
+			<hr />
+			<p>最近留言</p>
+			<textarea id="commentContent" wrap="soft" maxlength=100>
+				
+			</textarea>
+			<br />
+			<a id="submit" href="#">提 交</a>
+		</div>
+		<div id="content">
+			<div id="c1" class="cX">
+				<img class="img" id="c1Img" src="img/1.jpg" />
+				<a class="userName" id="c1UserName" href="">米卡</a>&nbsp&nbsp&nbsp&nbsp
+				<span class="date" id="c1Date">2015-11-16 21:22:29</span>
+				<p clasa="text" id="c1Text">这是评论</p>
+				<a class="delete" id="c1Delete" href="">删除</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

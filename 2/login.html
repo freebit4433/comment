@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login page</title>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="easyui/themes/default/easyui.css" />
+	<script type="text/javascript" src="easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<div id="loginWrapper">
+		<div id="loginPanel" class="easyui-panel" title="login">
+			<div class="inputBorder">
+				<label class="inputLabel" for="userName"><img src="img/icons/0.png"></label>
+				<input type="text" id="userName" class="textInput" placeholder="用户名" autofocus="autofocus">
+			</div>
+			<div class="inputBorder">
+				<label class="inputLabel" for="password"><img src="img/icons/1.png"></label>
+				<input type="password" id="password" class="textInput" placeholder="密码">
+			</div>
+			<div id="verifyCode" style="margin-left:50px; margin-bottom:20px;">
+				请输入验证码：<br/><input type="text" id="vcode" placeholder="验证码" />
+				<img id="vcodeimg" src="php/vcode.php">
+			</div>
+			<div id="loginButton">
+				<a id="login" style="cursor:pointer">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+			</div>
+			<a id="register" href="#">立即注册</a>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

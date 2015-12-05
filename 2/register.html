@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register page</title>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="easyui/themes/default/easyui.css" />
+	<script type="text/javascript" src="easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+	<div id="loginWrapper">
+		<div id="loginPanel" class="easyui-panel" title="login">
+			<div class="inputBorder">
+				<label class="inputLabel" for="userName"><img src="img/icons/0.png"></label>
+				<input type="text" id="userName" class="textInput" placeholder="用户名">
+			</div>
+			<div class="inputBorder">
+				<label class="inputLabel" for="password"><img src="img/icons/1.png"></label>
+				<input type="password" id="password" class="textInput" placeholder="密码">
+			</div>
+			<div id="inputBorderSex">
+				<div id="sexContent">
+					性别：
+					男<input type="radio" name="sex" checked="checked" value="man" />
+					女<input type="radio" name="sex" value="woman" />
+				</div>
+			</div>
+			<div id="imgWrapper">
+				图像：
+				<br />
+				<img src="img/1.jpg" alt="">
+				<img src="img/2.jpg" alt="">
+				<img src="img/3.jpg" alt="">
+				<img src="img/4.jpg" alt="">
+				<img src="img/5.jpg" alt="">
+				<br />
+				<input class="radio" type="radio" checked="checked" name="image" value="1" />
+				<input class="radio" type="radio" name="image" value="2" />
+				<input class="radio" type="radio" name="image" value="3" />
+				<input class="radio" type="radio" name="image" value="4" />
+				<input class="radio" type="radio" name="image" value="5" />
+			</div>
+			<div class="inputBorder">
+				<label class="inputLabel" for="webpage"><img src="img/icons/0.png"></label>
+				<input type="text" id="webpage" class="textInput" placeholder="webpage">
+			</div>
+			<div id="loginButton">
+				<a id="login" href="#">注&nbsp&nbsp&nbsp&nbsp册</a>
+			</div>
+			<!-- <a id="register" href="#">立即注册</a> -->
+		</div>
+	</div>
+</body>
+</html>

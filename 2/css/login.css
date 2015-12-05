@@ -1,0 +1,92 @@
+#loginWrapper {
+	width: 450px;
+	
+	margin: 100px auto;
+
+}
+
+#loginPanel {
+	width: 500px;
+	
+}
+
+.inputBorder {
+	border: 1px solid #BDBDBD;
+	margin: 20px 0 20px 50px;
+	position: relative;
+	width: 304px;
+	height: 38px;
+	overflow: hidden;
+}
+.inputBorder:first-child {
+	margin: 40px 0 20px 50px;
+}
+.textInput {
+	border: 0 none white;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: 宋体;
+	width: 254px;
+	height: 18px;
+	padding: 10px 0 10px 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.inputLabel {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	height: 38px;
+	border-right: 1px solid #BDBDBD;
+}
+#loginButton {
+	text-align: center;
+	margin: 5px 0 20px 50px;
+}
+#loginButton a {
+	width: 150px;
+	height: 32px;
+	background-color: #E4393C;
+	border: 1px solid #e85356;
+	color: #fff;
+	line-height: 31px;
+	font-size: 20px;
+	font-family: 微软雅黑;
+	text-decoration: none;
+	display: block;
+}
+#register {
+	display: block;
+	width: 80px;
+	position: relative;
+	margin-left: 50px;
+	font-size: 14px;
+	font-family: 宋体;
+	color: red;
+	text-decoration: none;
+	text-indent: 20px;
+	background-image: url(../img/icons/7.png);
+	background-repeat: no-repeat;
+	background-position: left; center;
+}
+#inputBorderSex{
+	border: 1px solid #BDBDBD;
+	position: relative;
+	left: 50px;
+	width: 304px;
+	height: 38px;
+	overflow: hidden;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#imgWrapper{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.radio {
+	margin-left: 20px;
+	margin-right: 14px;
+}
